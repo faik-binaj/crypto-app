@@ -1,0 +1,85 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #111111;*/
+}
+
+.home > h1 {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.home > p {
+    color: white;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    font-family: Roboto, "Ubuntu", Arial, sans-serif;
+    border: none;
+    height: 37px;
+    background-color: rgba(239, 242, 245, 0.82);
+    border-radius: 10px;
+    width: 50rem;
+}
+.search input {
+    border: 1px solid #eaeaea;
+    outline: none;
+}
+.search [type=text] {
+    padding: 19px 15px;
+    background-color: transparent;
+    border: none;
+    flex: 1;
+}
+
+.mainHeader {
+    display: flex;
+    width: 95%;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.refreshPage > button {
+    margin-left: 20px;
+    height: 37px;
+    width: 80px;
+    padding: 0px 10px 0px 10px;
+    background-color: #3aafa9;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.refreshPage button:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.2s;
+}
+
+
+
+@media only screen and (max-width: 960px) {
+    .search{
+        width: 30rem;
+    }
+}
+
+
+@media only screen and (max-width: 530px) {
+    .mainHeader {
+        width: 25rem;
+    }
+
+}
